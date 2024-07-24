@@ -12,7 +12,7 @@ In the age of online communication, the prevalence of toxic comments poses a sig
 6.	By achieving these objectives and goals, this project aims to contribute to the development of automated tools and technologies for combating toxic behaviour in online discourse, promoting a safer, healthier, and more inclusive digital environment for users worldwide.
 
 
-** #labels in the datasets:**
+**#labels in the datasets:**
 
  1. Toxic Comments:
 The dataset comprises 144,277 non-toxic comments (labelled as 0) and 15,294 toxic comments (labelled as 1). Insight: Toxic comments represent a significant portion of the dataset, indicating a notable presence of negative or harmful discourse.
@@ -31,4 +31,10 @@ A majority of comments (151,694) are devoid of insults (labelled as 0), while 7,
 ![SUMMARY](https://github.com/user-attachments/assets/0715d5a9-a49b-4dbf-a50d-8dae138f2761)
 
 **#About deep learning model used:**
+
 A Bidirectional LSTM layer is then incorporated to capture contextual information from both past and future states of the sequence. Subsequent dense layers with ReLU activation functions increase the model's capacity to learn complex patterns in the data. Finally, a dense layer with a sigmoid activation function is used for multi-label classification, predicting the probability of each class independently. After defining the model architecture, it is compiled using the Adam optimizer and binary cross-entropy loss function, which are suitable for binary classification problems. Additionally, binary accuracy is chosen as the evaluation metric to monitor the model's performance during training. Model building involves designing and training a machine learning or deep learning model to perform a specific task, such as toxicity classification. In my project, I constructed a deep learning model using TensorFlow's Sequential API. The model architecture includes layers for text vectorization, word embedding, LSTM, and dense layers for classification. During model building, I defined the architecture, compiled the model with appropriate loss and optimization functions, and trained it on the training dataset using backpropagation. After training, the model learns to make predictions based on the input text's features and the toxicity labels.
+
+![Screenshot (64)](https://github.com/user-attachments/assets/7d202362-3c79-478e-a271-b4875776756a)
+
+**#Output sample**
+![image](https://github.com/user-attachments/assets/e97f91a5-1777-44b3-82dd-3c2365d8d5c3)
